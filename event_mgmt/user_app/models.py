@@ -16,7 +16,6 @@ class Expense(models.Model):
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     expense_title = models.CharField(max_length=244)
     expense_amount = models.IntegerField()
-    
     date = models.DateField(auto_now_add=True)
     category = models.CharField(choices=CATEGORY)
 
